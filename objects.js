@@ -1,5 +1,5 @@
 var playlist = {cher: 'Do you believe'}
-function updatePlaylist(playlist, artistName, songTitle) {
-  Object.assign({}, playlist, {[artistName]: songTitle});
-  return playlist;
+function updatePlaylist(obj, str, title) {
+  obj[str] = title;
+  return obj;
 }
